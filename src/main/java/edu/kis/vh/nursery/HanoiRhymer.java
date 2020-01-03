@@ -1,17 +1,18 @@
 package edu.kis.vh.nursery;
 
-public class HanoiRhymer extends defaultCountingOutRhymer {
+public class HanoiRhymer extends DefaultCountingOutRhymer {
 
-int totalRejected = 0;
+    int totalrejected = 0;
 
-	public int reportRejected() {
-		return totalRejected;
-	}
+    public int reportRejected() {
+        return totalrejected;
+    }
 
-	public void countIn(int in) {
-	if (!callCheck() && in > peekaboo())
-			totalRejected++;
-			else
-				super.countIn(in);
-	}
+    public void countIn(int in) {
+        if (!callCheck() && in > peekaboo())
+            totalrejected++;
+        else
+            super.countIn(in);
+//        alt i strzalki przelaczaja miedzy otwartymi plikami w intellij
+    }
 }
