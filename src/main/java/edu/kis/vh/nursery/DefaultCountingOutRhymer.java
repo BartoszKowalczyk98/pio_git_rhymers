@@ -1,5 +1,7 @@
 package edu.kis.vh.nursery;
 
+import edu.kis.vh.nursery.stackandlistpackage.IntArrayStack;
+
 public class DefaultCountingOutRhymer {
     IntArrayStack intArrayStack;
 
